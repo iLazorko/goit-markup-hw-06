@@ -499,8 +499,7 @@ img {
 
 .contact {
   display: flex;
-  /* align-items: baseline; */
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-contacts {
@@ -516,7 +515,7 @@ img {
 }
 
 .social-network {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .network-list {
@@ -564,6 +563,16 @@ img {
   height: 50px;
   min-width: 358px;
   margin-right: 12px;
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+}
+
+.footer-input:focus,
+.footer-input:not(:placeholder-shown) {
+  color: var(--title-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--bgc-secondary);
 }
 
 .subscribe-btn {
@@ -789,7 +798,7 @@ img {
 }
 
 .input-checkbox:focus + .label-checkbox .checkbox,
-.input-checkbox:hover + .label-checkbox .checkbox  {
+.input-checkbox:hover + .label-checkbox .checkbox {
   border-color: var(--accent-color);
 }
 
